@@ -46,7 +46,7 @@ const handleLogin = TryCatch(async (req, res, next) => {
 	const refreshToken = jwt.sign(
 		{ userid: user.userid },
 		process.env.REFRESH_TOKEN_SECRET,
-		{ expiresIn: "1h" }
+		{ expiresIn: "10m" }
 	);
 
 	user.refreshToken = refreshToken;
