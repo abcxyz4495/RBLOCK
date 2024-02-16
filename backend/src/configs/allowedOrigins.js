@@ -1,6 +1,6 @@
 const allowedOrigins = [
 	"https://rblock-backend.onrender.com",
-	"http://localhost:4000",
+	"https://rblock-backend.onrender.com/login",
 ];
 
 module.exports = allowedOrigins;
