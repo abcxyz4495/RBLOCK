@@ -9,6 +9,7 @@ import useAuth from "../../hooks/useAuth";
 import useAxiosPrivate from "../../hooks/useAxiosPrivate";
 
 function Login() {
+	console.log("Hello");
 	const { setAuth, persist, setPersist, setUserDataBlocks } = useAuth();
 	const axiosPrivate = useAxiosPrivate();
 	const navigate = useNavigate();

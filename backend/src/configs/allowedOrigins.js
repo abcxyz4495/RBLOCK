@@ -1,5 +1,5 @@
 const allowedOrigins = [
-	"https://rblock-backend.onrender.com/auth/login",
+	"https://rblock-backend.onrender.com",
 ];
 
 module.exports = allowedOrigins;
