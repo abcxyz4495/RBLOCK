@@ -12,7 +12,7 @@ function App() {
 			<Routes>
 				<Route path="/login" element={<Login />} />
 
-				<Route element={<PersistLogin />}>
+				{/* <Route element={<PersistLogin />}> */}
 					<Route element={<RequireAuth />}>
 						<Route path="/" element={<Home />} />
 					</Route>
@@ -20,7 +20,7 @@ function App() {
 					<Route element={<RequireAuth />}>
 						<Route path="/block/:blockName" element={<Session />} />
 					</Route>
-				</Route>
+				{/* </Route> */}
 
 				<Route path="*" element={<NotFound />} />
 			</Routes>

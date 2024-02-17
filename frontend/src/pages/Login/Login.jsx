@@ -10,7 +10,8 @@ import useAxiosPrivate from "../../hooks/useAxiosPrivate";
 
 function Login() {
 	console.log("Hello");
-	const { setAuth, persist, setPersist, setUserDataBlocks } = useAuth();
+	// const { setAuth, persist, setPersist, setUserDataBlocks } = useAuth();
+	const { setAuth, setUserDataBlocks } = useAuth();
 	const axiosPrivate = useAxiosPrivate();
 	const navigate = useNavigate();
 
@@ -65,14 +66,14 @@ function Login() {
 		}
 	}
 
-	function togglePersist() {
-		setPersist((prev) => !prev);
-	}
+	// function togglePersist() {
+	// 	setPersist((prev) => !prev);
+	// }
 
-	useEffect(() => {
-		setPersist(true);
-		localStorage.setItem("persist", persist);
-	}, [persist, setPersist]);
+	// useEffect(() => {
+	// 	setPersist(true);
+	// 	localStorage.setItem("persist", persist);
+	// }, [persist, setPersist]);
 
 	return (
 		<div className="w-full h-screen flex">

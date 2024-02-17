@@ -6,9 +6,9 @@ const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
 	const [auth, setAuth] = useState({});
-	const [persist, setPersist] = useState(
-		JSON.parse(localStorage.getItem("persist")) || false
-	);
+	// const [persist, setPersist] = useState(
+	// 	JSON.parse(localStorage.getItem("persist")) || false
+	// );
 	const [userDataBlocks, setUserDataBlocks] = useState([]);
 	console.log("User Data", userDataBlocks);
 
@@ -17,8 +17,8 @@ export const AuthProvider = ({ children }) => {
 			value={{
 				auth,
 				setAuth,
-				persist,
-				setPersist,
+				// persist,
+				// setPersist,
 				userDataBlocks,
 				setUserDataBlocks,
 			}}
