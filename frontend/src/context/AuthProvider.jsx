@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 	// const [persist, setPersist] = useState(
 	// 	JSON.parse(localStorage.getItem("persist")) || false
 	// );
-	const [userDataBlocks, setUserDataBlocks] = useState([]);
+	const [userDataBlocks, setUserDataBlocks] = useState(null);
 	console.log("User Data", userDataBlocks);
 
 	return (
