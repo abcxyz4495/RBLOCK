@@ -44,7 +44,7 @@ function Home() {
 			isMounted = false;
 			controller.abort();
 		};
-	}, [axiosPrivate, userid, location, navigate]);
+	}, []);
 
 	return (
 		<div className="w-full h-screen">
