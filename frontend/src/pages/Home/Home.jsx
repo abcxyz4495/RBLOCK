@@ -21,7 +21,7 @@ function HomePage() {
 
 		const getData = async () => {
 			try {
-				// console.log("Requesting");
+				console.log("Requesting");
 				const response = await axiosPrivate.get(
 					`/user/details?userid=${userid}`,
 					{
