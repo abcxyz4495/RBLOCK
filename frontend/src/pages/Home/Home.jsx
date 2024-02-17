@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 import useAxiosPrivate from "../../hooks/useAxiosPrivate";
 import useAuth from "../../hooks/useAuth";
 
-function Home() {
+function HomePage() {
 	const navigate = useNavigate();
 	const axiosPrivate = useAxiosPrivate();
 	const location = useLocation();
@@ -85,4 +85,5 @@ const CourseCard = ({ name }) => {
 	);
 };
 
+const Home = React.memo(HomePage);
 export default Home;
